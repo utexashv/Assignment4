@@ -30,7 +30,7 @@ public class Assign4Driver
 		{
 	        try 
 	        {
-		        while (line != null) 
+	        	while (line != null) 
 				{
 		        	int index = line.indexOf(" "); 
 		        	startingWord = line.substring(0, index); 
@@ -44,7 +44,7 @@ public class Assign4Driver
 		        	List<String> result = wordLadderSolver.computeLadder(startingWord, endingWord);
 				}
 		        flag = false; 
-			}
+	        }
 	        catch (FileNotFoundException e) 
 			{
 				System.err.println ("Error: File not found. Exiting.");
