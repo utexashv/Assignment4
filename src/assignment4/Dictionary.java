@@ -27,11 +27,11 @@ public class Dictionary
 			FileReader file = new FileReader("A4-words.dat");
 			BufferedReader bufferedFile = new BufferedReader(file);
 			
-			for (String x = bufferedFile.readLine(); x != null; x = bufferedFile.readLine()) 
+			for (String line = bufferedFile.readLine(); line != null; line = bufferedFile.readLine()) 
 			{
-				if(x.charAt(0)!='*')
+				if(line.charAt(0)!='*')
 				{
-					myDictionary.add(x.substring(0, 5)); 
+					myDictionary.add(line.substring(0, 5)); 
 				}
 			}
 		} 
