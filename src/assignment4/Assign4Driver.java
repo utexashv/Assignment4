@@ -33,7 +33,7 @@ public class Assign4Driver
 	        	while(line != null)
 	        	{
 	        		int index = line.indexOf(" "); 
-		        	startingWord = line.substring(0, index); 
+	        		startingWord = line.substring(0, index); 
 		        	while(line.charAt(index) == ' ')
 		        	{
 		        		index++; 
@@ -48,8 +48,8 @@ public class Assign4Driver
 	        catch (FileNotFoundException e) 
 	        {
 	        	System.err.println("Error: FIle not found. Exiting.");
-				e.printStackTrace();
-				System.exit(-1);
+	        	e.printStackTrace();
+	        	System.exit(-1);
 	        }
 	        catch (NoSuchLadderException e) 
 	        {
