@@ -46,11 +46,11 @@ public class Assign4Driver
 		        flag = false; 
 	        }
 	        catch (FileNotFoundException e) 
-			{
+	        {
 				System.err.println ("Error: File not found. Exiting.");
 				e.printStackTrace();
 				System.exit(-1);
-			} 
+	        }
 	        catch (NoSuchLadderException e) 
 	        {
 	        	System.out.println(e);
