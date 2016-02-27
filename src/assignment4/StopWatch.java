@@ -27,7 +27,7 @@ public class StopWatch
 	{  
 		if (isRunning) 
 		{
-			return;      
+			return;
 		}
 		isRunning = true;     
 		startTime = System.nanoTime();   
@@ -66,7 +66,7 @@ public class StopWatch
 	 */
 	public void reset()  
 	{  
-		elapsedTime = 0;  
+		elapsedTime = 0;
 		isRunning = false;  
 	}
 }
