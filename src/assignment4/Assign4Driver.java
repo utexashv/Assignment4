@@ -32,7 +32,7 @@ public class Assign4Driver
 	        {
 	        	while(line != null)
 	        	{
-	        		int index = line.indexOf(" "); 
+	        		int index = line.indexOf(" ";)
 	        		startingWord = line.substring(0, index); 
 		        	while(line.charAt(index) == ' ')
 		        	{
