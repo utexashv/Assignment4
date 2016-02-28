@@ -11,3 +11,5 @@ Notes: When comparing words, it error checking will occur in the following order
 4) Ending word in dictionary
 5) Words are the same
 6) Word can be made into a ladder
+
+Elapsed time is measured with nanosecond timer and converted into seconds.
