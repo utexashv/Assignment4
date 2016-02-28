@@ -12,6 +12,7 @@ import java.util.Collections;
 // do not change class name or interface it implements
 public class WordLadderSolver implements Assignment4Interface
 {
+	private StopWatch watch;
     // delcare class members here.
 	private StopWatch myWatch;
 	private Dictionary myDictionary;
