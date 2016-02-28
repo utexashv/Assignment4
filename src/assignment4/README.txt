@@ -13,3 +13,5 @@ Notes: When comparing words, it error checking will occur in the following order
 6) Word can be made into a ladder
 
 Elapsed time is measured with nanosecond timer and converted into seconds.
+The dictionary file is called A4-words.dat
+The file that contains the words that wants a word ladder to be created is called A4-words.txt
