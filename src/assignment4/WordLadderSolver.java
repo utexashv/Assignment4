@@ -22,10 +22,10 @@ public class WordLadderSolver implements Assignment4Interface
     // add a constructor for this object. HINT: it would be a good idea to set up the dictionary there
 	public WordLadderSolver()
 	{
-		myWatch = new StopWatch(); 
-		myDictionary = new Dictionary(); 
-		tempList = new ArrayList<String>(); 
-		SolutionList = new ArrayList<String>(); 
+		myWatch = new StopWatch();
+		myDictionary = new Dictionary();
+		tempList = new ArrayList<String>();
+		SolutionList = new ArrayList<String>();
 	}
     // do not change signature of the method implemented from the interface
     public List<String> computeLadder(String startingWord, String endingWord) throws NoSuchLadderException 
