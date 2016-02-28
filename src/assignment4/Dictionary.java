@@ -41,7 +41,7 @@ public class Dictionary
 			e.printStackTrace();
 			System.exit(-1);
 		} 
-        catch (IOException e) 
+		catch (IOException e)
 		{
 			System.err.println ("Error: IO exception. Exiting.");
 			e.printStackTrace();
