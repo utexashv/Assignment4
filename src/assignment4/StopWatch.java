@@ -1,5 +1,5 @@
-/* Vo, Henry
- * hv3364
+/* Vo, Henry; Kim, Hyo-Jung
+ * hv3364; hk6336
  * EE422C-Assignment 4
  */
 
