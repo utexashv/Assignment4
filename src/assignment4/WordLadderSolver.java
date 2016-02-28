@@ -13,7 +13,7 @@ import java.util.Collections;
 public class WordLadderSolver implements Assignment4Interface
 {
     // delcare class members here.
-	private StopWatch myWath;
+	private StopWatch myWatch;
 	private Dictionary myDictionary;
 	private ArrayList<String> tempList; 
 	private ArrayList<String> SolutionList;  
