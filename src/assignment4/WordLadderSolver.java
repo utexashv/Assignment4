@@ -73,7 +73,7 @@ public class WordLadderSolver implements Assignment4Interface
     		{
     			System.out.println("Starting word: " + startingWord +"\nEnding word: " + endingWord + "\n");
     			System.out.println("Elapsed time is: " + (myWatch.getElapsedTime()/NANOS_PER_SEC) + " seconds"); 
-    			throw new NoSuchLadderException("\nCannot create a word ladder for these two words.\n\n**********");
+    			throw new NoSuchLadderException("\nCannot create a word ladder between " + startingWord + " and " + endingWord + "\n\n**********");
     		}
     		else 
     		{
