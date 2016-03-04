@@ -47,7 +47,7 @@ public class Assign4Driver
 	        }
 	        catch (FileNotFoundException e) 
 	        {
-	        	System.err.println("Error: FIle not found. Exiting.");
+	        	System.err.println("Error: File not found. Exiting.");
 	        	e.printStackTrace();
 	        	System.exit(-1);
 	        }

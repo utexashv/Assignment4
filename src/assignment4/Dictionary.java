@@ -66,6 +66,7 @@ public class Dictionary
 	public int dictSize()
 	{
 		return myDictionary.size(); 
+
 	}
 	
 	/**
