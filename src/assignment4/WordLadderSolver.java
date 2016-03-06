@@ -83,8 +83,9 @@ public class WordLadderSolver implements Assignment4Interface
         return SolutionList; 
     }
 
-    public boolean validateResult(String startingWord, String endingWord, List<String> wordLadder) 
+    public boolean validateResult(String startingWord, String endingWord, List<String> wordLadder) throws NoSuchLadderException 
     {
+   	 	boolean result = false;
    	 	if (!myDictionary.findWord(startingWord) || startingWord.length() != 5){
    	 		
    	 	}
@@ -94,17 +95,27 @@ public class WordLadderSolver implements Assignment4Interface
 				String check = wordLadder.get(i);
 				String prev = wordLadder.get(i-1);
 				if(check.length() != 5){
-					
+					System.out.format("One of the words in the Solution list, %s, is not 5 letters word\n", check);
+		    		throw new NoSuchLadderException("One of the words in the Solution list is not 5 letters word\n");
 				}
 				if(!myDictionary.findWord(check)){
-					
+					System.out.format("One of the words in the Solution list, %s, is not in the Dictionary\n", check);
+		    		throw new NoSuchLadderException("One of the words in the Solution list is not in the Dictionary\n");
 				}
 				if(difLetters(prev,check)!= 1){
-					
+					System.out.format("%s, %s are not differed by one letter\n", check, prev);
+		    		throw new NoSuchLadderException("words in the solution list does not change by 1 letter each time\n");
+				}
+				if(i != wordLadder.size()-1){
+					if (i !=wordLadder.lastIndexOf(check)){
+						System.out.format("%s is repetedly shown\n", check);
+			    		throw new NoSuchLadderException("words in the solution list are shown more than 1 time\n");
+					}
 				}
 				
 			}
-        throw new UnsupportedOperationException("Not implemented yet!");
+        result = true;
+        return result;
     }
 
     /**

@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface Assignment4Interface
 {
-    /**
+	/**
      * Computes the word ladder from startWord to endWord.
      *
      * NOTE: This is NOT the MakeLadder recursive method which is in the lab manual. You are to implement
@@ -38,6 +38,7 @@ public interface Assignment4Interface
      * @param endWord The ending word in the word ladder.
      * @param wordLadder The wordLadder to check if the solution is valid
      * @return True if the word ladder is correct, false otherwise.
+    * @throws NoSuchLadderException 
      */
-    boolean validateResult(String startWord, String endWord, List<String> wordLadder);
+    boolean validateResult(String startWord, String endWord, List<String> wordLadder) throws NoSuchLadderException;
 }
