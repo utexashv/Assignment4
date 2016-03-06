@@ -1,3 +1,6 @@
+/*Group Number: 36
+UT Name: Henry Vo; Hyo-Jung Kim
+UT EID: hv3364; hk6336  */
 package assignment4;
 
 import static org.junit.Assert.*;
