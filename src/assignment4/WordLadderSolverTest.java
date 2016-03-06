@@ -22,7 +22,7 @@ public class WordLadderSolverTest
 		catch (NoSuchLadderException e)
 		{
 			System.out.println(e);
-			System.out.println("Passes starting word length check test");
+			System.out.println("Passes starting word length check test\n");
 		}
 	}
 	@Test
@@ -35,7 +35,7 @@ public class WordLadderSolverTest
 		catch (NoSuchLadderException e)
 		{
 			System.out.println(e);
-			System.out.println("Passes ending word length check test");
+			System.out.println("Passes ending word length check test\n");
 		}
 	}
 	@Test
@@ -48,7 +48,7 @@ public class WordLadderSolverTest
 		catch (NoSuchLadderException e)
 		{
 			System.out.println(e);
-			System.out.println("Passes starting word dictionary check test");
+			System.out.println("Passes starting word dictionary check test\n");
 		}
 	}
 	@Test
@@ -61,7 +61,7 @@ public class WordLadderSolverTest
 		catch (NoSuchLadderException e)
 		{
 			System.out.println(e);
-			System.out.println("Passes ending word dictionary check test");
+			System.out.println("Passes ending word dictionary check test\n");
 		}
 	}
 	@Test
@@ -74,9 +74,10 @@ public class WordLadderSolverTest
 		catch (NoSuchLadderException e)
 		{
 			System.out.println(e);
-			System.out.println("Passes no infinite loop or no way check test");
+			System.out.println("Passes no infinite loop or no way check test\n");
 		}
 	}
+	@Test
 	public void testwhitebox6() //test if the result of the system check same ending and starting words
 	{	
 		try{
@@ -86,7 +87,21 @@ public class WordLadderSolverTest
 		catch (NoSuchLadderException e)
 		{
 			System.out.println(e);
-			System.out.println("Passes same endiing and starting words check test");
+			System.out.println("Passes same endiing and starting words check test\n");
+		}
+	}
+	@Test
+	public void testwhitebox7() //test if the result of the system handles appropriate inputs
+	{	
+		try{
+			List<String> result = wordLadderSolver.computeLadder("stone", "money");
+			System.out.println("Passes all the test\n");
+		}
+		catch (NoSuchLadderException e)
+		{
+			System.out.println(e);
+			fail("Fail the test\n");
+			
 		}
 	}
 }

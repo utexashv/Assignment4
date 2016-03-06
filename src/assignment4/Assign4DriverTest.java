@@ -1,3 +1,6 @@
+/*Group Number: 36
+UT Name: Henry Vo; Hyo-Jung Kim
+UT EID: hv3364; hk6336  */
 package assignment4;
 
 import static org.junit.Assert.*;
@@ -16,7 +19,7 @@ public class Assign4DriverTest
 		try{
 			List<String> result = wordLadderSolver.computeLadder("babes", "child");
 			boolean check = wordLadderSolver.validateResult("bebes", "child", result);
-			System.out.println("Passes validate solution list test");
+			System.out.println("Passes validate solution list test\n");
 		}
 		catch (NoSuchLadderException e)
 		{
