@@ -87,7 +87,8 @@ public class WordLadderSolver implements Assignment4Interface
     {
    	 	boolean result = false;
    	 	if (!myDictionary.findWord(startingWord) || startingWord.length() != 5){
-   	 		
+   	 		System.out.format("One of the words in the Solution list, %s, is not 5 letters word\n", startingWord);
+	    		throw new NoSuchLadderException("One of the words in the Solution list is not 5 letters word\n");
    	 	}
    	 	
 			for (int i=1; i < wordLadder.size() ; i ++)
