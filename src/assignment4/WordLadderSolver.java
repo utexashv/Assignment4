@@ -85,6 +85,25 @@ public class WordLadderSolver implements Assignment4Interface
 
     public boolean validateResult(String startingWord, String endingWord, List<String> wordLadder) 
     {
+   	 	if (!myDictionary.findWord(startingWord) || startingWord.length() != 5){
+   	 		
+   	 	}
+   	 	
+			for (int i=1; i < wordLadder.size() ; i ++)
+			{
+				String check = wordLadder.get(i);
+				String prev = wordLadder.get(i-1);
+				if(check.length() != 5){
+					
+				}
+				if(!myDictionary.findWord(check)){
+					
+				}
+				if(difLetters(prev,check)!= 1){
+					
+				}
+				
+			}
         throw new UnsupportedOperationException("Not implemented yet!");
     }
 
