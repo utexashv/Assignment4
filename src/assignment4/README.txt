@@ -15,4 +15,4 @@ Notes: When comparing words, it error checking will occur in the following order
 Elapsed time is measured with nanosecond timer and converted into seconds.
 The dictionary file is called A4-words.dat
 The file that contains the words that wants a word ladder to be created is called A4-words.txt
-Both the .dat and .txt file should be in the src file for the code to run
+Both the .dat and .txt file should be in the src file for the code to run and are arguments in the Run Configuration settings. 
