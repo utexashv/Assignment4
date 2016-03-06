@@ -18,5 +18,5 @@ The file that contains the words that wants a word ladder to be created is calle
 Both the .dat and .txt file should be in the src file for the code to run and are arguments in the Run Configuration settings.
 
 JUnit tests
-1. Assign4DriverTest.java = Check if the result of the WordLadderSolver is the validate result 
+1. Assign4DriverTest.java = Check if the result of the WordLadderSolver is the validate result using validate result method in interface
 2. WordLadderSolverTest.java = check if the system appropriately handles various exceptions
